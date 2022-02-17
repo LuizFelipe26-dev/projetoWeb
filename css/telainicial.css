@@ -103,8 +103,10 @@ h1 {
   color: #003f63;
 }
 
-.imageinicio {
+.container .imageinicio {
   position: absolute;
+  right: 110px;
+  z-index: 1;
 }
 
 .display-4 {
