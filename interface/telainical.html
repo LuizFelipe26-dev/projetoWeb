@@ -4,64 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HandyMan</title>
 
+    <!-- Google Fonts -->
     <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.1/examples/headers/"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
     />
 
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- Template Main CSS File -->
     <link href="/css/telainicial.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <header
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-          >
-            <!-- Logo da HandyMan -->
-            <svg class="bi me-2" width="40" height="32" role="img">
-              <use xlink:href="#bootstrap" />
-            </svg>
-          </a>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="/img/logo.png" alt="" />
+        </a>
 
-          <ul
-            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li><a href="#" class="nav-link px-2 link-secondary">Ínicio</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Serviços</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Ajuda</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Ínicio</a></li>
+            <li><a class="nav-link scrollto" href="#about">Serviços</a></li>
+            <li><a class="nav-link scrollto" href="#services">Ajuda</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">FAQ</a>
+            </li>
+            <li>
+              <a class="getstarted scrollto" href="#about">ENTRAR</a>
+            </li>
           </ul>
-
-          <div class="col-md-3 text-end">
-            <button type="button" class="entrabtn">Entrar</button>
-          </div>
-        </header>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
     </header>
-    <main>
-      <div class="p-4 mb-4 fundo">
-        <div class="container">
-          <img src="/img/pagina1.png" class="imageinicio" alt="" />
-          <div class="col-md-6 px-0">
-            <h1 class="display-4">
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">
               Mais uma noite como Todas as anteriores numa Caneca de café cheia
             </h1>
-            <p class="lead my-3">
+            <h2 data-aos="fade-up" data-aos-delay="400">
               Ao contrário da crença popular, o Lorem Ipsum não é
-            </p>
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="600"></div>
+          </div>
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img src="/img/pagina1.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
-    </main>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
