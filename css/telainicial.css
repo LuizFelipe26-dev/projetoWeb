@@ -596,15 +596,22 @@ section {
   margin-top: 120px;
 }
 .features .feture-tabs h3 {
-  color: #012970;
+  color: #0d0d0d;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
   padding-top: 20%;
 }
+.features .feture-tabs p {
+  color: #003f63;
+  padding-top: 15px;
+}
 @media (max-width: 768px) {
   .features .feture-tabs h3 {
     font-size: 28px;
+  }
+  .features .feture-tabs p {
+    font-size: 15px;
   }
 }
 .features .feture-tabs .nav-pills {
@@ -629,14 +636,24 @@ section {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: #012970;
+  color: #000000;
 }
 .features .feture-tabs .tab-content i {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
-  color: #4154f1;
+  color: #ffa500;
 }
+
+.features .feture-tabs .tab-content .app-class {
+  display: flex;
+  padding-top: 10px;
+}
+
+.features .feture-tabs .tab-content .app-class .img-goo {
+  margin-left: 15px;
+}
+
 .features .feature-icons {
   margin-top: 120px;
 }
