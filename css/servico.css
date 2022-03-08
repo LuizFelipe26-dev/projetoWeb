@@ -10,15 +10,6 @@ body {
   color: #444444;
 }
 
-body,
-ul,
-li,
-p {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
 a {
   color: #4154f1;
   text-decoration: none;
@@ -29,12 +20,6 @@ a:hover {
   text-decoration: none;
 }
 
-p {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
 h1,
 h2,
 h3,
@@ -43,128 +28,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
 
-.section-header {
-  text-align: center;
-  padding-bottom: 40px;
-}
-.section-header h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #003f63;
-  text-transform: uppercase;
-}
-.section-header p {
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-size: 38px;
-  line-height: 42px;
-  font-weight: 600;
-  color: #003f63;
-}
-
-.section-header span {
-  color: #ffa500;
-}
-
-@media (max-width: 768px) {
-  .section-header p {
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #012970;
-  min-height: 40px;
-  margin-top: 82px;
-  color: #fff;
-}
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 57px;
-  }
-}
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol a {
-  color: #fff;
-  transition: 0.3s;
-}
-.breadcrumbs ol a:hover {
-  text-decoration: underline;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #8894f6;
-  content: "/";
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background: #4154f1;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #6776f4;
-  color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -402,22 +266,63 @@ section {
   display: block;
 }
 
-/* Flexbox */
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 200px;
+/*--------------------------------------------------------------
+# Specials
+--------------------------------------------------------------*/
+.specials {
+  overflow: hidden;
+  padding-top: 130px;
+  background: #f2f2f2;
+}
+.specials .nav-tabs {
+  border: 0;
+}
+.specials .nav-link {
+  border: 0;
+  padding: 12px 15px;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 0;
+  border-right: 2px solid #cda45e;
+  font-weight: 600;
+  font-size: 15px;
+}
+.specials .nav-link:hover {
+  color: #cda45e;
+}
+.specials .nav-link.active {
+  color: #1a1814;
+  background: #cda45e;
+  border-color: #cda45e;
+}
+.specials .nav-link:hover {
+  border-color: #cda45e;
+}
+.specials .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.specials .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.specials .details p {
+  color: #aaaaaa;
+}
+.specials .details p:last-child {
+  margin-bottom: 0;
 }
 
-.flex > div {
-  flex: 1 1 200px;
-  margin: 10px;
+.specials .espaco {
+  flex: 0 0 auto;
+  width: 25%;
 }
 
-.flex img {
-  max-width: 100%;
-  display: block;
+@media (max-width: 992px) {
+  .specials .nav-link {
+    border: 0;
+    padding: 15px;
+  }
 }
