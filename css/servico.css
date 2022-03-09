@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #f2f2f2;
 }
 
 a {
@@ -281,7 +281,7 @@ h6 {
   border: 0;
   padding: 12px 15px;
   transition: 0.3s;
-  color: #fff;
+  color: #d9d2d2;
   border-radius: 0;
   border-right: 2px solid #cda45e;
   font-weight: 600;
@@ -291,9 +291,9 @@ h6 {
   color: #cda45e;
 }
 .specials .nav-link.active {
-  color: #1a1814;
-  background: #cda45e;
-  border-color: #cda45e;
+  color: #002235;
+  background: #ffa500;
+  border-color: #ffa500;
 }
 .specials .nav-link:hover {
   border-color: #cda45e;
@@ -318,6 +318,17 @@ h6 {
 .specials .espaco {
   flex: 0 0 auto;
   width: 25%;
+}
+
+.specials .section-title h2 {
+  color: #003f63;
+}
+.specials .section-title p {
+  color: #002235;
+}
+
+.specials .cards {
+  display: flex;
 }
 
 @media (max-width: 992px) {
