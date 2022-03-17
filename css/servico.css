@@ -306,6 +306,7 @@ h6 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
+
   color: #fff;
 }
 .specials .details p {
@@ -315,28 +316,60 @@ h6 {
   margin-bottom: 0;
 }
 
-.specials .espaco {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
 .specials .section-title h2 {
+  font-size: 23px;
+
   color: #003f63;
 }
 .specials .section-title p {
   color: #002235;
 }
 
-.specials .card-select {
+.specials .espaco {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.specials .card-select .card .card-body h5 {
+  color: #002235;
+
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+}
+
+.specials .card-select .card .card-text {
+  color: #002235;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  text-align: right;
   display: flex;
+}
+
+.specials .card-select .card .card-text p {
+  padding-top: 13px;
+  padding-left: 5px;
+}
+.specials .card-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   margin: 0;
   max-width: 800px;
-  justify-items: end;
+  padding-left: 60px;
 }
 
-.specials .row .card-select .card {
-  margin: 10px;
+.specials .card-select .card {
+  margin-left: 50px;
+  margin-bottom: 50px;
+
+  border-radius: 15px;
+}
+.specials .card-select .card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 @media (max-width: 992px) {
