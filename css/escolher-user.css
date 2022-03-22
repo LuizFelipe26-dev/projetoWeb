@@ -216,7 +216,7 @@ form.sign-in-form {
 .container:before {
   content: "";
   position: absolute;
-  height: 2000px;
+  height: 3000px;
   width: 2000px;
   top: -10%;
   right: 48%;
@@ -245,11 +245,6 @@ form.sign-in-form {
 .left-panel {
   pointer-events: all;
   padding: 3rem 17% 2rem 12%;
-}
-
-.right-panel {
-  pointer-events: none;
-  padding: 3rem 12% 2rem 17%;
 }
 
 .panel .content {
@@ -330,19 +325,6 @@ form.sign-in-form {
 .container.sign-up-mode form.sign-in-form {
   opacity: 0;
   z-index: 1;
-}
-
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
-  transform: translateX(0%);
-}
-
-.container.sign-up-mode .left-panel {
-  pointer-events: none;
-}
-
-.container.sign-up-mode .right-panel {
-  pointer-events: all;
 }
 
 @media (max-width: 870px) {
