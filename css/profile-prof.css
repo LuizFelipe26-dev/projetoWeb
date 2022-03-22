@@ -381,9 +381,12 @@ h6 {
   display: block;
 }
 
+/**
+* Profile
+*/
+
 .profile .grid-header {
-  background: url("https://bootdey.com/img/Content/bg1.jpg") no-repeat center
-    center;
+  background: #000000;
   background-size: cover;
   color: #f5f5f5;
 }
