@@ -49,7 +49,7 @@ form {
   grid-row: 1 / 2;
 }
 
-form .cards {
+form .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -65,7 +65,9 @@ form .card {
   border-radius: 40px;
   max-height: 468px;
   max-width: 200px;
-  margin-left: 32px;
+  margin: 30px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 form .card p {
@@ -94,6 +96,18 @@ form.sign-up-form {
 
 form.sign-in-form {
   z-index: 2;
+}
+
+.container .cards .card {
+  transition: 0.3s;
+}
+.container .cards:hover .cliente {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.container .cards:hover .prof {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .title {
