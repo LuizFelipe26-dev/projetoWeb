@@ -66,6 +66,7 @@ form .card {
   max-height: 468px;
   max-width: 200px;
   margin: 30px;
+  text-decoration: none;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

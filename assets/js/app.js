@@ -1,11 +1,13 @@
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
+const questions = document.querySelectorAll(".question-answer");
 
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
+questions.forEach(function (question) {
+  const btn = question.querySelector(".question-btn");
+  btn.addEventListener("click", function () {
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
+    question.classList.toggle("show-text");
+  });
 });
