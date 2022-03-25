@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HandyMan</title>
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
     <link href="/assets/pag-inicial/aos/aos.css" rel="stylesheet" />
     <link
       href="/assets/pag-inicial/bootstrap/css/bootstrap.min.css"
@@ -27,7 +32,6 @@
 
     <link href="/css/sobre.css" rel="stylesheet" />
   </head>
-
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
@@ -57,132 +61,246 @@
     </header>
     <!-- End Header -->
 
-    <div class="container">
-      <h1 class="title">Sobre a HandyMan</h1>
-      <main class="accordion">
-        <div class="faq-img">
-          <img src="/img/faq.png" alt="" class="accordion-img" />
+    <main id="main">
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>HandyMan</h2>
+            <p>Sobre a equipe</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- F.A.Q List 1-->
+              <div class="accordion accordion-flush" id="faqlist1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-1"
+                    >
+                      QUEM SOMOS?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Popularmente chamada de HandyMan, somos uma empresa
+                      desenvolvida e pensada para facilitar a sua busca por
+                      profissionais qualificados.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-2"
+                    >
+                      O QUE FAZEMOS?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Disponibilizamos profissionais qualificados em nosso site
+                      e aplicativo mobile, para que você, cliente, possa
+                      contactar os profissionais de forma mais fácil e ágil em
+                      momentos de urgência. Assim como, damos a oportunidade
+                      para os profissionais fazerem parte de nossa equipe de
+                      prestadores de serviço.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-3"
+                    >
+                      QUANDO COMEÇAMOS?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Estamos no mercado desde de 2020, quando demos início a
+                      construção deste projeto. Após meses de pesquisas, estudos
+                      e planejamento, decidimos dar início no desenvolvimento do
+                      projeto. Começamos com o aplicativo mobile, no qual
+                      estamos atualizando e melhorando todos os dias com mais
+                      aplicações e funcionalidades, para que o nosso cliente
+                      tenha uma melhor usabilidade.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <!-- F.A.Q List 2-->
+              <div class="accordion accordion-flush" id="faqlist2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-1"
+                    >
+                      ONDE ATUAMOS?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Atualmente, estamos trabalhando de forma remota através do
+                      site e aplicativo mobile. Estamos em toda a região norte
+                      do país, trabalhando para atingir todo o território
+                      nacional.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-2"
+                    >
+                      POR QUE DESENVOLVEMOS O SOFTWARE?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Quando um de nossos integrantes estava precisando de um
+                      profissional e não conhecia ninguém que desenvolvesse o
+                      serviço. Trouxe o problema para a equipe e começamos
+                      algumas pesquisas básica, mas, com uma grande importância
+                      para nós. Descobrimos uma enorme dificuldade nas pessoas
+                      para encontrar um profissional qualificado. Com isso,
+                      começamos a pensar uma forma de solucionar esse problema
+                      dentro da sociedade, utilizando a tecnologia a nosso
+                      favor. Começamos o planejamento e modulagem da nossa
+                      ideia, fizemos inúmeros protótipos, designers e mais
+                      planejamentos. Quando finalmente foi definido, demos
+                      início ao desenvolvimento. Demos estrutura e capacitação
+                      para nossos programadores para que pudessem entregar um
+                      software bem estruturado e “limpo”.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="content-accordion">
-          <div class="question-answer">
-            <div class="question">
-              <h3 class="title-question">QUEM SOMOS?</h3>
-              <button class="question-btn">
-                <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-                </span>
-                <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-                </span>
-              </button>
-            </div>
-            <div class="answer">
-              <p>
-                Popularmente chamada de HandyMan, somos uma empresa desenvolvida
-                e pensada para facilitar a sua busca por profissionais
-                qualificados.
-              </p>
-            </div>
-          </div>
-          <div class="question-answer">
-            <div class="question">
-              <h3 class="title-question">O QUE FAZEMOS?</h3>
-              <button class="question-btn">
-                <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-                </span>
-                <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-                </span>
-              </button>
-            </div>
-            <div class="answer">
-              <p>
-                Disponibilizamos profissionais qualificados em nosso site e
-                aplicativo mobile, para que você, cliente, possa contactar os
-                profissionais de forma mais fácil e ágil em momentos de
-                urgência. Assim como, damos a oportunidade para os profissionais
-                fazerem parte de nossa equipe de prestadores de serviço.
-              </p>
-            </div>
-          </div>
-          <div class="question-answer">
-            <div class="question">
-              <h3 class="title-question">QUANDO COMEÇAMOS?</h3>
-              <button class="question-btn">
-                <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-                </span>
-                <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-                </span>
-              </button>
-            </div>
-            <div class="answer">
-              <p>
-                Estamos no mercado desde de 2020, quando demos início a
-                construção deste projeto. Após meses de pesquisas, estudos e
-                planejamento, decidimos dar início no desenvolvimento do
-                projeto. Começamos com o aplicativo mobile, no qual estamos
-                atualizando e melhorando todos os dias com mais aplicações e
-                funcionalidades, para que o nosso cliente tenha uma melhor
-                usabilidade.
-              </p>
-            </div>
-          </div>
-          <div class="question-answer">
-            <div class="question">
-              <h3 class="title-question">ONDE ATUAMOS?</h3>
-              <button class="question-btn">
-                <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-                </span>
-                <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-                </span>
-              </button>
-            </div>
-            <div class="answer">
-              <p>
-                Atualmente, estamos trabalhando de forma remota através do site
-                e aplicativo mobile. Estamos em toda a região norte do país,
-                trabalhando para atingir todo o território nacional.
-              </p>
-            </div>
-          </div>
-          <div class="question-answer">
-            <div class="question">
-              <h3 class="title-question">POR QUE DESENVOLVEMOS O SOFTWARE?</h3>
-              <button class="question-btn">
-                <span class="up-icon">
-                  <i class="fas fa-chevron-up"></i>
-                </span>
-                <span class="down-icon">
-                  <i class="fas fa-chevron-down"></i>
-                </span>
-              </button>
-            </div>
-            <div class="answer">
-              <p>
-                Quando um de nossos integrantes estava precisando de um
-                profissional e não conhecia ninguém que desenvolvesse o serviço.
-                Trouxe o problema para a equipe e começamos algumas pesquisas
-                básica, mas, com uma grande importância para nós. Descobrimos
-                uma enorme dificuldade nas pessoas para encontrar um
-                profissional qualificado. Com isso, começamos a pensar uma forma
-                de solucionar esse problema dentro da sociedade, utilizando a
-                tecnologia a nosso favor. Começamos o planejamento e modulagem
-                da nossa ideia, fizemos inúmeros protótipos, designers e mais
-                planejamentos. Quando finalmente foi definido, demos início ao
-                desenvolvimento. Demos estrutura e capacitação para nossos
-                programadores para que pudessem entregar um software bem
-                estruturado e “limpo”.
-              </p>
+      </section>
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer" class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-5 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                  <img src="/img/logo.png" alt="" />
+                </a>
+                <p>Empresa de serviços mais segura do Brasil.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                <h4>Informações</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">Sobre a empresa</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Time</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                <h4>Extra</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">Política de Privacidade</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">Suporte 24 horas</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+              >
+                <h4>Contato</h4>
+                <p>
+                  1852 Djalma Batista <br />
+                  Manaus, Amazonas<br />
+                  Brasil <br /><br />
+                  <strong>Telefone:</strong> +55 092 99118-5529<br />
+                  <strong>Email:</strong> handymanservicos@gmail.com<br />
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+
+        <div class="container">
+          <div class="credits">
+            Fnt by <a href="https://getbootstrap.com">Bootstrap</a>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <!-- End F.A.Q Section -->
+    </main>
+
     <script src="/assets/pag-inicial/purecounter/purecounter.js"></script>
     <script src="/assets/pag-inicial/aos/aos.js"></script>
     <script src="/assets/pag-inicial/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -192,6 +310,5 @@
     <script src="/assets/pag-inicial/php-email-form/validate.js"></script>
 
     <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/app.js"></script>
   </body>
 </html>

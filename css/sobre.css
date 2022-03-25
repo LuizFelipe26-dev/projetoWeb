@@ -1,23 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 12px;
+/*--------------------------------------------------------------
+# Geral
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #002235;
+}
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
-  background: #f2f2f2;
-  display: flex;
-  justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -380,114 +389,145 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Sobre a empresa
+# F.A.Q
 --------------------------------------------------------------*/
-.container {
-  position: relative;
-  margin-top: 100px;
+.faq {
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
-
-.accordion {
-  position: relative;
-  width: 350px;
-  margin-left: 40px;
+.faq .accordion-collapse {
+  border: 0;
 }
-
-.title {
-  margin-top: 20px;
-  font-size: 2rem;
-  text-align: center;
-
+.faq .accordion-button {
+  padding: 15px 15px 20px 0;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
   color: #002235;
+  text-align: left;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+.faq .accordion-button:not(.collapsed) {
+  background: none;
+  color: #ffa500;
+  border-bottom: 0;
+}
+.faq .accordion-body {
+  padding: 0 0 25px 0;
+  border: 0;
 }
 
-.content-accordion {
-  margin-top: 35px;
-  margin-right: 50px;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  background: #f2f2f2;
+  padding: 0 0 30px 0;
+  font-size: 14px;
 }
 
-.question-answer {
-  width: 100%;
-  border-bottom: 1px solid #f2f2f2;
+.footer .footer-top {
+  background: #f2f2f2;
+  background-size: contain;
+  border-top: 1px solid #e1ecff;
+  border-bottom: 1px solid #e1ecff;
+  padding: 60px 0 30px 0;
 }
-
-.question {
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 992px) {
+  .footer .footer-top {
+    background-position: center bottom;
+  }
 }
-
-.accordion-img {
+.footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+.footer .footer-top .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 15px;
+}
+.footer .footer-top .footer-info .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+.footer .footer-top .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3px;
+}
+.footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  color: #003f63;
+}
+.footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.footer .footer-top .social-links a:hover {
+  color: #012970;
+}
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #002235;
+  text-transform: uppercase;
   position: relative;
+  padding-bottom: 12px;
 }
-
-.title-question {
-  margin: 1.4rem 0rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #d98c00;
-
-  padding-left: 20px;
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
 }
-
-.question-btn {
-  font-size: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-.up-icon {
-  display: none;
-}
-
-.answer {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  display: none;
-  padding-bottom: 10px;
-
-  color: #00101a;
-}
-
-.quem {
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #002235;
   font-size: 12px;
+  line-height: 0;
 }
-
-.show-text .answer {
-  display: block;
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
-
-.show-text .up-icon {
-  display: inline;
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
 }
-
-.show-text .down-icon {
-  display: none;
+.footer .footer-top .footer-links ul a {
+  color: #003f63;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
 }
-
-@media screen and (min-width: 992px) {
-  .accordion {
-    width: 920px;
-    height: 0;
-    display: flex;
-  }
-
-  .accordion-img {
-    position: relative;
-    width: 420px;
-    top: 88px;
-  }
-
-  .question-answer {
-    width: 380px;
-  }
-
-  .content-accordion {
-    margin-top: 85px;
-  }
-
-  .title {
-    margin-top: 50px;
-    font-size: 3rem;
-  }
+.footer .footer-top .footer-links ul a:hover {
+  color: #4154f1;
+}
+.footer .footer-top .footer-contact p {
+  line-height: 26px;
+  color: #003f63;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #012970;
+}
+.footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #012970;
 }
